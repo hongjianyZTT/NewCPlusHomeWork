@@ -23,10 +23,17 @@ int main()
   printf("String length is %d\n", Length(string));
   return 0;
 }
-
+/*
+ * This function will return the length of a string.
+ * Argument: char array.
+ * Return: int
+ */
 int Length(char str[])
 {
-  char *s;
-  for (s = str; *s != '\0'; s++);
-  return (int)(s - str);
+  char *s = str;    // Create a pointer which points to input char array.
+  while (*s != '\0' && *s != '\n')
+  {
+    s++;           // Move forward the pointer for one position.
+  }
+  return (int)(s - str);     // The distance between these two pointers should be the length of the string.
 }

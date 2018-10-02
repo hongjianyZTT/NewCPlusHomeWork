@@ -1,3 +1,6 @@
+/*
+ * This is a program to call macro MAX2 and MAX3.
+ */
 #include <stdio.h>
 #include "Defs.h"
 int main()
